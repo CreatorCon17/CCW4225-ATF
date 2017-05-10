@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-04-14 14:20:30">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Media Library">3458a92c518a32007f446637134c6055</application>
+<application_name>Media Library</application_name>
+<application_scope>x_snc_media_librar</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Client Script needed by ATF lab</description>
+<inserted/>
+<name>Media Library Client Script Addenda</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>c3cbf1fe618e32007f446c40fa8e1e11</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-14 14:20:30</sys_created_on>
+<sys_id>41adfdfe618e32007f446c40fa8e1e90</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-14 14:20:30</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Media Library">3458a92c518a32007f446637134c6055</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_client_134cf5fe618e32007f446c40fa8e1e77</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;active&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;messages/&gt;&lt;name&gt;Abort Loan with Bad Dates&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+	var opened =  g_form.getValue('opened_at');
+	var due_date = g_form.getValue('due_date');
+	if (due_date &lt; opened) {
+		g_form.addErrorMessage('Due date must be after loan date');
+		return false;
+	}
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-14 14:16:09&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path/&gt;&lt;sys_id&gt;134cf5fe618e32007f446c40fa8e1e77&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Abort Loan with Bad Dates&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Media Library" source="x_snc_media_librar"&gt;3458a92c518a32007f446637134c6055&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Media Library"&gt;3458a92c518a32007f446637134c6055&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_134cf5fe618e32007f446c40fa8e1e77&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-14 14:16:09&lt;/sys_updated_on&gt;&lt;table&gt;x_snc_media_librar_loan&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Media Library Client Script Addenda">41adfdfe618e32007f446c40fa8e1e90</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-14 14:20:30</sys_created_on>
+<sys_id>05adfdfe618e32007f446c40fa8e1e90</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-14 14:20:30</sys_updated_on>
+<table>x_snc_media_librar_loan</table>
+<target_name>Abort Loan with Bad Dates</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
