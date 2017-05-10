@@ -1,0 +1,10 @@
+Preparing a Personal Developer Instance for CCW 4225 - Getting Started with Istanbul Automated Testing Framework
+
+
+Step 1 - Upload the three Update Sets: MediaLibrary-1.0.0.xml, MediaLibraryUpdate.xml, and MediaLibraryBreakingChanges.xml
+
+Step 2 - Preview and commit these two update sets in this order: MediaLibrary-1.0.0.xml and MediaLibraryUpdate.xml. Do NOT commit MediaLibraryBreakingChanges.xml at this time, you will do this as part of the lab.
+
+Step 3 - Import the data contained in the files x_snc_media_librar_copy.xml and x_snc_media_librar_media.xml. This are a few demo records that will make it easier to perform the tasks in the lab.
+
+At this point you are ready to work through the lab. Any issues, feel free to reach out to dave.slusher@servicenow.com. Thank you!
